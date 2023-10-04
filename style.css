@@ -1,0 +1,98 @@
+* { 
+    margin: 0;
+    padding: 0;
+    font-family:Quicksand, sans-serif;
+    /* outline: 1px solid lime; */
+    user-select: none;
+    
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.calender{
+    background-color: #12121f;
+    /* max-width: 25rem; */
+    /* max-width: 30rem; */
+    min-width: 25rem;
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5rem 15rem 15rem 10rem;
+}
+.month-container{
+    width: 100%;
+    margin: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.arrow{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+.arrow.clicked{
+    background-color: #eee;
+    border-radius: 25%;
+    color: #12121f;
+}
+/* .arrow-rt{*/
+    /* margin-right: 0.5rem; */
+    /* width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+} */ 
+.month{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1.5rem;
+}
+.weekdays{
+    width: 90%;
+    /* padding: 0 0.5rem 0 0.5rem; */
+    /* max-width: 25rem; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+
+    
+}
+.days{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.days div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.selected{
+    background-color: #eee;   
+    color: #12121f;
+    margin: 0.5rem;
+}
+.notSelected{
+    background-color: gray;
+}
+.days .notThisMonths{
+    opacity: 0.5;
+}
+
